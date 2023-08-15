@@ -1,0 +1,109 @@
+@media (min-width: 768px) {
+    .banner {
+        background-image: url('/banner.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover !important; 
+        &-text {
+            & .animate__animated {
+                text-shadow:  1px 1px 2px #1e1616;
+            }
+        }
+    }
+}
+@media (min-width: 1024px){
+    .tabs{
+        flex-wrap: wrap !important;
+        overflow-x: initial !important;
+        justify-content: center;
+    }
+    .tab{
+        height: 4rem !important;
+        font-size: 1rem !important;
+        line-height: 1.25rem !important;
+        line-height: 4rem !important;
+        --tab-padding: 3rem !important;
+    }
+    .card-container {
+        min-width: 330px !important;
+        max-width: 340px !important;
+    }
+    .opening{
+        background-size: 10vw, 10vw, 10vw, 10vw !important
+    }
+    .modal-wrapper {
+        width: 7vw !important;
+        min-height: 200px;
+        height: 100%;
+    }
+    .close {
+        top: 2rem;
+        right: 2rem !important;
+    }
+    #contact_popup{
+        & > div {
+            width: 100%;
+            max-width: 60vw !important;
+        }
+    }
+    .guarantee{
+        &.top-left {
+            & .card-container{
+                border-top-left-radius: 5rem;
+                overflow: hidden;
+            }
+		}
+		&.top-right {
+            & .card-container{
+                border-top-right-radius: 5rem;
+                overflow: hidden;
+            }
+		}
+		&.bottom-left {
+            & .card-container{
+                border-bottom-left-radius: 5rem;
+                overflow: hidden;
+            }
+		}
+		&.bottom-right {
+            & .card-container{
+                border-bottom-right-radius: 5rem;
+                overflow: hidden;
+            }
+		}
+    }
+}
+@media (min-width: 1536px){
+    html {
+        font-size: 21px !important;
+    }
+    ul.help-counter{
+        gap: 1rem !important;
+        li {
+            width: 1.5rem !important;
+            height: 1.5rem !important;
+        }
+    }
+    .card-container {
+        min-width: 400px !important;
+        max-width: 450px !important;
+    }
+    #contact_popup{
+        & > div {
+            width: 100%;
+            max-width: 30vw !important;
+        }
+    }
+}
+
+@for $k from 6 through 20 {
+    .animate__delay-#{$k}s{
+	    animation-delay: calc(var(--animate-delay) * $k);
+    }
+}
+
+@for $i from 21 through 100 {
+    .pt-#{$i}{
+	    padding-top: (0.25 * $i)+rem;
+    }
+}
