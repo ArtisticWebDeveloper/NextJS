@@ -20,7 +20,7 @@ const Layout = (prop) => {
           <Footer />
         </div>
         <div className="whatsapp fixed bottom-5 left-4 md:left-2">
-          <a href="https://api.whatsapp.com/send?phone=14196885404" rel="noreferrer" target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=15622835146" rel="noreferrer" target="_blank">
             <Image src="/WhatsApp.png" alt="WhatsApp" width={60} height={60} />
           </a>
         </div>
